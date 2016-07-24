@@ -1,6 +1,4 @@
-plot1 <- function(filepath){ # file path as argument of the function
-
-filepath <- "household_power_consumption.txt" # give the correct filepath to read this file. In my code this file is stored in working directory.
+plot1 <- function(filepath){ # file path as argument of the function. give the correct filepath to read this file. In my code this file is stored in working directory.
 
 epc <- data.frame(read.table(filepath,sep = ";",header= TRUE),stringAsFactor=FALSE) # read the data from the file
 
